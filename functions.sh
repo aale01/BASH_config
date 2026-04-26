@@ -4,9 +4,9 @@ cd() {
     builtin cd "$@" || return
 
 	RED_MSG='\e[1;31m'
-	GREEN_MSG='\033[1;32m'
-	BLUE_MSG='\033[1;36m'
-	RESET_MSG='\033[0m'
+	GREEN_MSG='\e[1;32m'
+	BLUE_MSG='\e[1;36m'
+	RESET_MSG='\e[0m'
 
     if git_root=$(git rev-parse --show-toplevel 2>/dev/null); then
         if [ "$git_root" != "$LAST_GIT_ROOT" ]; then
