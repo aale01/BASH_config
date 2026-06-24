@@ -12,9 +12,12 @@ cd() {
         if [ "$git_root" != "$LAST_GIT_ROOT" ]; then
             LAST_GIT_ROOT="$git_root"
 
+			REMOTE=$(git remote get-url origin)
             echo -e ""
             echo -e "${BLUE_MSG}📁 Repository:${RESET_MSG} $git_root"
+            echo -e "${BLUE_MSG}🌐 Remote:${RESET_MSG} $REMOTE"
             echo -e "${BLUE_MSG}⏳ Fetch...${RESET_MSG}"
+            echo -e ""
 
             # timeout per evitare freeze infinito (es. rete morta)
             if ! timeout 10 git fetch origin; then
