@@ -6,6 +6,7 @@ add_to_path() {
 }
 
 add_to_path "$HOME/.local/bin"
+add_to_path "$HOME/scripts"
 add_to_path "$HOME/.venv/bin"
 add_to_path "$HOME/.spicetify"
 add_to_path "$HOME/local/node-24/bin"
