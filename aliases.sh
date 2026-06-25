@@ -1,18 +1,28 @@
 # ~/.bashrc.d/aliases.sh
 
-alias ls='ls --color=auto'
+# dircolors
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && \
+        eval "$(dircolors -b ~/.dircolors)" || \
+        eval "$(dircolors -b)"
+
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+fi
+
 alias ll='ls -lAhs'
 alias la='ls -A'
 alias l='ls -CF'
 #alias lc='ls | column'
 
-alias grep='grep --color=auto'
+alias fgrep='grep -F'
+alias egrep='grep -E'
 
 alias vim='nvim'
 alias vimswap='cd ~/.local/state/nvim/swap && ls -lAhs'
 alias vimconf='cd ~/.config/nvim && vim'
-alias bashconf='vim ~/.bashrc'
-alias bashaliases='vim ~/.bash_aliases'
+alias bashconf='cd ~/.bashrc.d && vim'
+# alias bashaliases='vim ~/.bash_aliases'
 alias cursus='cd ~/Desktop/42Locale/Cursus/.'
 #alias gp='git push'
 
