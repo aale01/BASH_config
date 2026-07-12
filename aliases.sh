@@ -20,10 +20,10 @@ alias egrep='grep -E'
 
 alias vim='nvim'
 alias vimswap='cd ~/.local/state/nvim/swap && ls -lAhs'
-alias vimconf='cd ~/.config/nvim/lua/. && vim'
+alias vimconf='cd ~/.config/nvim/lua && vim'
 alias bashconf='cd ~/.bashrc.d && vim'
 # alias bashaliases='vim ~/.bash_aliases'
-alias cursus='cd ~/Desktop/42Locale/Cursus/.'
+alias cursus='cd ~/Desktop/42/'
 #alias gp='git push'
 
 alias freecache="sudo sync; sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'; echo 'cache deleted'"
