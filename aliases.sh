@@ -23,7 +23,8 @@ alias vimswap='cd ~/.local/state/nvim/swap && ls -lAhs'
 alias vimconf='cd ~/.config/nvim/lua && vim'
 alias bashconf='cd ~/.bashrc.d && vim'
 # alias bashaliases='vim ~/.bash_aliases'
-alias cursus='cd ~/Desktop/42/'
+# alias cursus='cd ~/Desktop/42/'
+alias 42='cd ~/Desktop/42/ && pwd ; echo ; ll'
 #alias gp='git push'
 
 alias freecache="sudo sync; sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'; echo 'cache deleted'"
