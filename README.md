@@ -16,16 +16,16 @@ This repository contains a curated bash configuration setup designed to provide 
 
 1. Clone the repository **renaming** it:
 ```bash
-git clone https://github.com/aale01/BASH_config.git .bashrc.d
+git clone https://github.com/aale01/BASH_config.git ~/.bashrc.d
 ```
 
-2. You just have to write the following line at the end of your personal `.bashrc` file located in your home in order not to lose your configurations:
+2. You just have to write the following line at the end of your personal `~/.bashrc` file located in your home in order not to lose your configurations:
 ```bash
-source .bashrc.d/.bashrc
+source ~/.bashrc.d/.bashrc
 ```
    or enter the following command:
 ```bash
-echo "source .bashrc.d/.bashrc" >> .bashrc
+echo "source ~/.bashrc.d/.bashrc" >> ~/.bashrc
 ```
 
 3. Reload your bash configuration:
