@@ -2,7 +2,7 @@
 
 # PATH pulito (evita duplicati)
 add_to_path() {
-    [[ ":$PATH:" != *":$1:"* ]] && PATH="$1:$PATH"
+	[[ ":$PATH:" != *":$1:"* ]] && PATH="$1:$PATH"
 }
 
 add_to_path "/opt/nvim-linux-x86_64/bin"
@@ -13,3 +13,5 @@ add_to_path "$HOME/.spicetify"
 add_to_path "$HOME/local/node-24/bin"
 
 export PATH
+
+export DEBUGINFOD_URLS=""
